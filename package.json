@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "watchify ./lib -o ./client/bundle.js -v",
+    "start": "budo ./lib -d ./client --serve bundle.js --live",
+    "server": "nodemon ./server/index.js localhost 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +21,7 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "browserify": "^13.0.0",
+    "budo": "^8.0.4",
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "nodemon": "^1.8.1",
