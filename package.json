@@ -14,5 +14,13 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/andi-crb/TellTale/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "browserify": "^13.0.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "nodemon": "^1.8.1",
+    "superagent": "^1.7.2"
   }
 }
