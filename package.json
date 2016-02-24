@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "watchify ./lib -o ./client/bundle.js -v",
-    "start": "budo ./lib -d ./client --serve bundle.js --live",
+    "start": "budo ./lib -d ./client/ --serve bundle.js --live",
     "server": "nodemon ./server/index.js localhost 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,9 +22,16 @@
     "body-parser": "^1.15.0",
     "browserify": "^13.0.0",
     "budo": "^8.0.4",
+    "cheerio": "^0.20.0",
     "cors": "^2.7.1",
+    "dom-extractor": "0.0.14",
+    "es6-promise": "^3.1.2",
     "express": "^4.13.4",
+    "jQuery": "^1.7.4",
+    "jquery": "^2.2.0",
     "nodemon": "^1.8.1",
+    "promise": "^7.1.1",
+    "ramda": "^0.19.1",
     "superagent": "^1.7.2"
   }
 }
